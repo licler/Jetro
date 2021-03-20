@@ -6,33 +6,57 @@ $(function(){
     arrows: true,
     fade: true,
     asNavFor: '.slider__nav',
+    
+  });
+  $('.slider__nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    asNavFor: '.slider__inner',
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    focusOnSelect: true,
+    variableWidth: true,
     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/previous.svg"></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/next.svg"></button>',
     responsive: [
       {
         breakpoint: 935,
         settings: {
-          arrows: false,
+          slidesToShow: 4,
         }
-      },
+      }
     ]
-    
-  });
-  $('.slider__nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider__inner',
-    dots: false,
-    arrows: false,
-    centerMode: true,
-    focusOnSelect: true,
-    variableWidth: true
   });
 
   $('.works__inner').slick({
     slidesToShow: 4,
-    slidesToScroll: 1
-   
+    slidesToScroll: 4,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: '<button class="slick-works slick-prev--works"><img src="images/previous.svg"></button>',
+    nextArrow: '<button class="slick-works slick-next--works"><img src="images/next.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 930,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $('.header__menu-btn').on('click', function(){

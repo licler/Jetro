@@ -37,6 +37,8 @@ a {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -167,7 +169,7 @@ li {
 
 .slider__nav img {
     width: 120px;
-    height: 140px;
+    height: 120px;
 }
 
 .slider__nav .slick-slide+.slick-slide {
@@ -201,7 +203,26 @@ li {
 .slick-prev::before {
     display: none;
 }
-
+.slick-works {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    z-index: 10;
+}
+.slick-prev--works {
+    left: 20px;
+    width: 36px;
+    height: 52px;
+}
+.slick-next--works {
+    right: 20px;
+    width: 36px;
+    height: 52px;
+}
 .items {
     background-color: #fdfdfd;
     padding: 35px 0;
