@@ -1,9 +1,15 @@
 /* start header */
 @media (max-width: 945px) {
+    .slider__inner::before,
+    .slider__inner::after {
+        display: none;
+    }
     .header__menu-btn {
         display: block;
         cursor: pointer;
+        z-index: 888;
     }
+
 
     .header__menu ul {
         display: none;
@@ -20,8 +26,6 @@
     .header__menu li {
         display: block;
         text-align: center;
-     
-      
     }
 
     .header__menu li+li {
@@ -137,6 +141,12 @@
 
 
 /* start footer */
+@media (max-width: 945px) {
+   .footer__inner::before,
+    .footer__inner::after {
+        display: none;
+    }
+}
 @media (max-width: 915px) {
  
     .footer__item-title {
@@ -155,6 +165,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+ 
 }
 @media (max-width: 600px) {
     .footer__item {

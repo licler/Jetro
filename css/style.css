@@ -1,5 +1,7 @@
 html {
     box-sizing: border-box;
+    height: 100%;
+    position: relative;
 }
 
 *,
@@ -27,6 +29,8 @@ html {
 }
 body {
     overflow-x: hidden;
+    height: 100%;
+	position: relative;
     
 }
 a {
@@ -54,7 +58,14 @@ li {
 .header {
     background-color: #fefefe;
 }
-
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 456;
+}
+.header__fixed {
+    background-color: #993535;
+}
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -67,6 +78,7 @@ li {
     font-weight: 400;
     font-size: 36px;
     font-family: 'bebas';
+    z-index: 456;
 }
 
 .header__logo a span {
@@ -88,6 +100,7 @@ li {
 .header__menu a:hover {
     color: #e8663c;
 }
+
 .header__menu-btn {
     width: 30px;
     display: none;
@@ -252,6 +265,7 @@ li {
     top: 50%;
     transform: translateY(-50%);
     left: -70px;
+    
 }
 
 .item__content {
